@@ -1,0 +1,259 @@
+
+/* Stylesheet content from css/cotizaMet99.css in folder common */
+
+/* Stylesheet content from css/cotizaMet99.css in folder common */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 05-oct-2015, 10:42:39
+    Author     : cristopherbg
+*/
+#rightSide {
+	background-color: rgba(255, 255, 255, 0.8);
+	/*overflow: hidden;*/
+}
+
+.panel-group .list-group {
+	margin-bottom: 0px;
+}
+
+.panel-group .list-group .list-group-item {
+	border-radius: 0px;
+	border-left: none;
+	border-right: none;
+	text-align: left;
+}
+
+.panel-group .list-group .list-group-item:last-child {
+	border-bottom: none;
+}
+
+input[type="text"] {
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+h3 {
+	color: #2376CA;
+}
+
+h4 {
+	color: #605F60;
+	margin-top: 23px;
+}
+
+.ofertaBtn {
+	margin-top: 10px;
+	background: #00A650;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	font-size: 3vh;
+}
+
+.cancelarBtn {
+	margin-top: 10px;
+	background: #E6F4F7;
+	color: #2376CA;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	font-size: 3vh;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	-webkit-align-content: center;
+	align-content: center;
+}
+
+input[type=text], input[type=number] {
+	border-color: #047DC4;
+	border-style: solid;
+	padding: 7px 5px 7px 5px;
+}
+
+.list-group-item:active {
+	background-color: #047DC4;
+	color: white;
+}
+
+.list-gpi2:active {
+	background-color: transparent;
+	color: black;
+}
+
+#sumaAseguradaList li {
+	margin: 0px;
+}
+
+.rowTable {
+	padding: 0px;
+	margin: 0px;
+}
+
+#sumaAseguradaList li {
+	height: 40px;
+}
+
+.list-group-item:first-child {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#sumaAseguradaList {
+}
+/*
+.panel-default>.panel-heading{
+	background: transparent;
+}
+.panel.panel-default{
+	background: transparent;
+}
+.panel-heading{
+	color: #047DC4;
+	background: transparent;
+}
+.panel-title h4{
+	color: #047DC4;
+	background: transparent;
+}*/
+#scrollable_content {
+	height: 3000px;
+	overflow-y: auto;
+	padding-bottom: 10px;
+}
+
+#accordion h3 {
+	margin-left: 0px;
+	padding-left: 10px;
+}
+
+.avatar {
+	width: 133px;
+	height: 133px;
+	margin: 3px;
+	border: 3px solid #047DC4;
+	border-radius: 133px;
+	-webkit-border-radius: 133px;
+	-moz-border-radius: 133px;
+}
+
+div#sumaAseguradaList.list-group a.list-group-item {
+	height: 42px;
+}
+
+.list-group-item {
+	text-align: left;
+}
+
+.fa-iconXl {
+	font-size: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#sCGarantiaEscolar {
+	margin: 0px;
+	width: 100%;
+	/* height: 50%; */
+	position: relative;
+	bottom: 0;
+	right: 0;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom: 30px;
+}
+
+#sCGarantiaEscolar a.list-group-item {
+	text-align: center;
+	height: 40px;
+}
+
+#sumaAseguradaList a.list-group-item {
+	text-align: center;
+	height: 40px;
+}
+
+.list-group-item {
+	height: 62px;
+	padding: 0px;
+	vertical-align: middle;
+	padding: 8px;
+}
+
+.list-group {
+	margin-bottom: 0px;
+}
+
+.v-center {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+
+.customSpan {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	color: #047DC4;
+}
+.itemHidden{
+	display: none;
+}
+#totalSeleccionados {
+  height: 67vh;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+#totalSeleccionados .list-group{
+	height: 40px;
+}
+.sumaListDiv1{
+	margin: 0px;
+	width: 100%;
+	height: 34vh;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	overflow: hidden; /* has to be scroll, not auto */
+}
+.windowContainer{
+	overflow-y: scroll;
+	position: absolute;
+	/*-webkit-overflow-scrolling: touch;
+	z-index:0; */ /* MODIFICADO PARA SCROLL*/
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.list-group-item {
+  border-bottom: 0px #ddd solid;
+}
+.switch-off{
+    background-color: transparent;
+    background-image: url('../images/icons/switch-off.png');
+    background-size : cover;
+    width: 70px;
+    height: 32px;
+    float:right;
+    border:none;
+}
+.switch-on{
+    background-color: transparent;
+    background-image: url('../images/icons/switch-on.png');
+    background-size : cover;
+    width: 70px;
+    height: 32px;
+    float:right;
+    border:none;
+}

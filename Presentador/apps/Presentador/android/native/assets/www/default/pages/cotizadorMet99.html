@@ -1,0 +1,258 @@
+<link rel="stylesheet" type="text/css" media="all"
+	href="css/toggleSwitch.css" />
+<link rel="stylesheet" type="text/css" media="all"
+	href="css/cotizaMet99.css" />
+
+<div id="container">
+	<!--The Hamburger Button in the Header-->
+	<div id="menuContainer">
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="navMenu"></nav>
+	</div>
+	<!--The Layer that will be layed over the content
+              so that the content is unclickable while menu is shown-->
+	<div id="content" class="bg-cotizador">
+		<div id="contentLayer"></div>
+		<!--The content of the site-->
+		<div id="mainContent">
+			<div id="topLogo">
+				<a id="btnDesktop" href="javascript:loadDesktop();"><span
+					class="fa fa-home"></span></a> <img src="images/whiteLogo.png"
+					id="metlifeLogo" style="display: block;" />
+				<h3 id="breadCrumb">
+					<a href="javascript:loadIdentifica();">Identifica &#62;</a>
+				</h3>
+				<h1 id="titleScreen" style="margin-top: 1vh;">Cotizador <br /> <img src="images/logos/logo-met99.png"
+						style="width: 40%; margin-left: 10px; margin-top: -40px;" />
+				</h1>
+			</div>
+			<div id="escritorio">
+				<div id="leftSide"></div>
+				<div id="rightSide">
+					<form id="paso1" style="margin-top: 7vh; text-align: center;">
+						<div class="row">
+							<div class="genero col-xs-8" style="text-align: center;"
+								id="generoCliente">
+								<img class="hombre avatar" src="images/charlie.png"
+									style="height: 130px; margin: auto;" /> <img class="mujer"
+									src="images/lucy.png" style="height: 130px; margin-left: 10px" />
+							</div>
+							<div class="col-xs-4" style="text-align: center;">
+								<img src="images/cigarro.png"
+									style="height: 130px; margin: auto" id="esFumador" />
+							</div>
+						</div>
+						<div class="row" style="margin-top: 5vh;">
+							<div class="col-xs-12">
+								<input type="number" class="form-controll" placeholder="Edad" name="edad" id="edadTitularTxt"/>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 2vh;">
+							<div class="col-xs-12">
+								<h3>Suma asegurada</h3>
+							</div>
+						</div>
+						<div class="row rowTable sumaListDiv1">
+							<div class="col-xs-12 windowContainer">
+									<div class="list-group" id="sumaAseguradaList" style="text-align: center;">
+										<a class="list-group-item clear-fix">$150,000.00</a>
+										<a class="list-group-item clear-fix">$200,000.00</a>
+										<a class="list-group-item clear-fix">$250,000.00</a>
+										<a class="list-group-item clear-fix">$300,000.00</a>
+										<a class="list-group-item clear-fix">$350,000.00</a>
+										<a class="list-group-item clear-fix">$400,000.00</a>
+										<a class="list-group-item clear-fix">$450,000.00</a>
+										<a class="list-group-item clear-fix">$500,000.00</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12"
+								style="text-align: center; margin-top: 5vh;">
+								<button type="submit" class="btn btn-default ofertaBtn" style="text-align: center;">VER OFERTA</button>
+							</div>
+						</div>
+					</form>
+					<form id="paso2" style="margin-top: 20px;">
+						<div class="row" id="steperOptions">
+							<div class="row" style="text-align: center">
+								<div class="col-xs-6"><h3>Suma asegurada</h3></div>
+								<div class="col-xs-1">
+									<div id="decrementarSuma" style="float: right; margin-top: 21px;" onclick="javascript:changePrice(-50000);">
+										<span class="glyphicon glyphicon-minus-sign"></span>
+									</div>
+								</div>
+								<div class="col-xs-3"><h4 id="sumaAseguradaTit"></h4></div>
+								<input type="text" name="price" id="price" class="form-control input-number" min="150000" max="500000" style="display:none;"/>
+								<div class="col-xs-1">
+									<div id="incrementarSuma" style="float: left; margin-top: 21px;" onclick="javascript:changePrice(50000);">
+										<span class="glyphicon glyphicon-plus-sign"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row" style="text-align: center">
+								<div class="col-xs-6"><h3>Pago quincenal</h3></div>
+								<div class="col-xs-6"><h4>$<span id=pagoQuincenalText></span></h4></div>
+							</div>
+						</div>
+						<div class="row rowTable overthrow" id="coberturaList" style=" overflow-y: scroll; height: 70vh; position: relative;">
+							<div class="col-xs-12 rowTable overthrow" style="overflow-y: scroll;">
+								<div class="list-group overthrow" id="accordion" style="width: 100%;">
+								</div>
+							</div>
+						</div>
+						<div class="row " id="datosConyuge" style="display: none;">
+							<h3>Datos Funerarios Conyuge</h3>
+							<div class="row">
+								<div class="genero col-xs-12" style="text-align: center;" id="generoFunerariosConyuge">
+									<img class="hombre avatar" src="images/charlie.png" style="height: 130px; margin: auto;" />
+									<img class="mujer" src="images/lucy.png" style="height: 130px; margin-left: 10px" />
+								</div>
+							</div>
+							<div class="row" style="margin-top: 5vh; margin-bottom: 10vh;">
+								<div class="col-xs-12">
+									<input type="number" class="form-controll" placeholder="Edad" id="edadFunerariosConyuge" />
+								</div>
+							</div>
+						</div>
+						<div class="row" id="funerariosHijo" style="display: none;">
+
+							<div class="col-xs-12" ><!-- id="complementariosFuneralHijos"> -->
+							<h3>Gastos funerarios hijos</h3>
+								<select name="hijosFunerariosN" id="hijosFunerariosN" class="btn btn-default dropdown-toggle" style="width: 100%;margin-bottom: 30px;margin-top: 30px;">
+									<option value="0">Hijos</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="3">4</option>
+									<option value="3">5</option>
+									<option value="3">6</option>
+									<option value="3">7</option>
+									<option value="3">8</option>
+									<option value="3">9</option>
+									<option value="3">10</option>
+								</select>
+							</div>
+							<p>El rango de edades de los hijos es de 0 a 25 a&ntilde;os</p>
+						</div>
+						<div class="row" id="complementarioCancer" style="display: none;">
+							<div class="col-xs-12" id="complementariosCancer1">
+							</div>
+							<div class="col-xs-12" id="complementariosCancer2">
+
+							</div>
+						</div>
+						<div class="row" id="gastosFunerariosComplementarios"
+							style="display: none;">
+							<div class="col-xs-12" id="gastosFunerariosComplementarios2"></div>
+						</div>
+						<div class="row" id="complementario" style="display: none;">
+							<div class="col-xs-12" id="complementario2">
+								<h3>Fallecimiento complementario</h3>
+							<div class="row" style="margin-top: 5vh; margin-bottom: 10vh;">
+								<div class="col-xs-12">
+									<input type="number" class="form-controll" placeholder="Edad" id="edadComplementario" />
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="row" id="accidentes" style="display: none;">
+							<div class="col-xs-12" id="accidentes2"></div>
+						</div>
+						<div class="row" id="sCGarantiaEscolar" style="display: none;">
+							<!-- <div class="row">
+								<div class="genero col-xs-12" style="text-align: center;" id="generoGarantiaEscolar">
+									<img class="hombre avatar" src="images/charlie.png" style="height: 130px; margin: auto;" />
+									<img class="mujer" src="images/lucy.png" style="height: 130px; margin-left: 10px" />
+								</div>
+							</div> -->
+							<div class="row" style="margin-top: 5vh;">
+								<h3>Garantia escolar</h3>
+								<!-- <div class="col-xs-12">
+									<input type="number" class="form-controll" placeholder="Edad" id="EdadHijoGarantiaTxt" />
+								</div> -->
+							</div>
+							<div class="row" style="margin-top: 2vh;">
+								<div class="col-xs-12">
+									<h3>Suma asegurada</h3>
+								</div>
+							</div>
+							<div class="row rowTable">
+								<div class="col-xs-12 rowTable">
+									<div class="list-group" id="sumaAseguradaGarantia" style="text-align: center;">
+											<a class="list-group-item clear-fix">$150,000.00</a>
+											<a class="list-group-item clear-fix">$200,000.00</a>
+											<a class="list-group-item clear-fix">$250,000.00</a>
+											<a class="list-group-item clear-fix">$300,000.00</a>
+											<a class="list-group-item clear-fix">$350,000.00</a>
+											<a class="list-group-item clear-fix">$400,000.00</a>
+											<a class="list-group-item clear-fix">$450,000.00</a>
+											<a class="list-group-item clear-fix">$500,000.00</a>
+									</div>
+								</div>
+								<input type="hidden" id="sumaAseguradaGarantiaTxt" name="sumaAseguradaGarantiaTxt"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6" style="text-align: right;">
+								<button class="btn btn-default cancelarBtn"
+									onclick="javascript:paso1(true);">CANCELAR</button>
+							</div>
+							<div class="col-xs-6">
+								<input type="submit" value="ACEPTAR"
+									onclick="javascript:continuar();"
+									class="btn btn-default ofertaBtn" />
+							</div>
+						</div>
+
+					</form>
+					<form id="pasoFinal" style="margin-top: 20px;">
+					<div class="row">
+						<div class="col-xs-6">
+						<h3>Suma asegurada:</h3>
+						</div>
+						<div class="col-xs-6">
+						<h3 id="sumaAseguradaFinal">150000</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+						<h3>Pago quincenal:</h3>
+						</div>
+						<div class="col-xs-6">
+						<h3 id="pagoQuincenalFinal">250</h3>
+						</div>
+					</div>
+					<div class="row rowTable">
+							<div class="col-xs-12 rowTable">
+								<div class="list-group" id="totalSeleccionados" style="text-align: center;">
+								</div>
+							</div>
+					</div>
+					<div class="row">
+							<div class="col-xs-12">
+								<input type="submit" value="ACEPTAR" class="btn btn-default ofertaBtn" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript" src="js/libs/jquery.number.min.js"></script>
+<script type="text/javascript" src="js/coberturasList.js"></script>
+<script type="text/javascript" src="js/cotizaMet99.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		last_element = "pages/productosPublico.html";
+	});
+</script>

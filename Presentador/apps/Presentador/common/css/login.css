@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-oct-2015, 10:42:39
+    Author     : cristopherbg
+*/
+
+/*
+#escritorio {
+	float: right;
+	margin-top: 0px;
+	margin-left: 0px;
+}*/
+#leftSide {
+	float: left;
+	width: 50%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#rightSideLogin {
+	float: right;
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 50%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+	text-align: center;
+}
+
+body, .row {
+	background-color: transparent;
+}
+
+.fill {
+	min-height: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.logoLogin {
+	width: 68%;
+	margin-top: 20%;
+	margin-bottom: 14%;
+}
+
+.userTxt, .passTxt {
+	background-position: 10px 10px;
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	padding-left: 42px;
+	border: 2px solid #057EC1;
+	border-radius: 0px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.userTxt::-webkit-input-placeholder {
+	color: #057EC1;
+}
+
+.userTxt:-moz-placeholder {
+	color: #057EC1;
+}
+
+.userTxt::-moz-placeholder {
+	color: #057EC1;
+}
+
+.userTxt:-ms-input-placeholder {
+	color: #057EC1;
+}
+
+.passTxt::-webkit-input-placeholder {
+	color: #057EC1;
+}
+
+.passTxt:-moz-placeholder {
+	color: #057EC1;
+}
+
+.passTxt::-moz-placeholder {
+	color: #057EC1;
+}
+
+.passTxt:-ms-input-placeholder {
+	color: #057EC1;
+}
+
+.userTxt {
+	background-image: url(../images/icons/userInputIcon.png);
+}
+
+.passTxt {
+	background-image: url(../images/icons/passInputIcon.png);
+}
+
+.form-group {
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
+.btn-blue, .btn-blue:active, .btn-blue:hover {
+	background: #057EC1;
+	color: white;
+	border-radius: 0px;
+	font-size: 1.5em;
+}
+
+.form-group {
+	margin-bottom: 24px;
+}
+
+.userTxt, .passTxt {
+	height: 50px;
+	font-size: 18px;
+	line-height: 1.3333333;
+}
+
+.btn-blue {
+	height: 50px;
+}

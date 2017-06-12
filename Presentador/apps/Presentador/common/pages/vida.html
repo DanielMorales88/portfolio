@@ -1,0 +1,73 @@
+<div id="container">
+	<!--The Hamburger Button in the Header-->
+	<div id="menuContainer">
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="navMenu"></nav>
+	</div>
+	<!--The Layer that will be layed over the content
+              so that the content is unclickable while menu is shown-->
+	<div id="content" class="bg-vida">
+		<div id="contentLayer"></div>
+		<!--The content of the site-->
+		<div id="mainContent">
+			<div id="topLogo">
+				<a id="btnDesktop" href="javascript:loadDesktop();"><span
+					class="fa fa-home"></span></a> <img src="images/whiteLogo.png"
+					id="metlifeLogo" style="display: block;" />
+				<h3 id="breadCrumb">
+					<a href="javascript:loadIdentifica();">Identifica&#62; </a><a
+						href="javascript:loadProductosPrivado();">Productos &#62;</a>
+				</h3>
+				<h1 id="titleScreen"
+					style="margin-top: 10px; margin-right: 10px; display: block; float: left;">Vida</h1>
+			</div>
+			<div id="escritorio">
+				<div id="leftSide"></div>
+				<div id="rightSide">
+					<!-- 1st row verticaly centered text in the square columns -->
+					<div class="rectangle blueBtn"
+						onclick="javascript:loadTotalLife();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">
+									<img class="logoSections" src="images/logos/logo-totalife-small.png"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 2nd row verticaly centered images in square columns -->
+					<div class="rectangle clearSquare">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+					<div class="rectangle greenBtn" id="btnCotiza"
+						onclick="javascript:loadTempoLife();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">
+									<img class="logoSections" src="images/logos/logo-tempolife-small.png"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+        	last_element = "pages/productosPrivado.html";
+        });
+        </script>

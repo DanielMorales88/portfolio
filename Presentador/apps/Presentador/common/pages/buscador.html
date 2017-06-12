@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	var myRecords = [
+  {
+    "band": "Weezer",
+    "song": "El Scorcho"
+  },
+  {
+    "band": "Chevelle",
+    "song": "Family System"
+  }];
+  
+	$('#my-final-table').dynatable({
+		dataset : {
+			records : myRecords
+		}
+	});
+</script>
+<table id="my-final-table">
+	<thead>
+		<th>Band</th>
+		<th>Song</th>
+	</thead>
+	<tbody>
+	</tbody>
+</table>

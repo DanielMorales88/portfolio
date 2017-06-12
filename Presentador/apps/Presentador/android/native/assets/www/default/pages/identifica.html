@@ -1,0 +1,67 @@
+<div id="container">
+	<!--The Hamburger Button in the Header-->
+	<div id="menuContainer">
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="navMenu"></nav>
+	</div>
+	<!--The Layer that will be layed over the content
+              so that the content is unclickable while menu is shown-->
+	<div id="content" class="bg-identifica">
+		<div id="contentLayer"></div>
+		<!--The content of the site-->
+		<div id="mainContent">
+			<div id="topLogo">
+				<a id="btnDesktop" href="javascript:loadDesktop();"><span
+					class="fa fa-home"></span></a> <img src="images/whiteLogo.png"
+					id="metlifeLogo" />
+				<h1 id="titleScreen">Identifica</h1>
+			</div>
+			<div id="escritorio">
+				<div id="leftSide"></div>
+				<div id="rightSide">
+					<!-- 1st row verticaly centered text in the square columns -->
+					<div class="rectangle blueBtn" onclick="javascript:loadMet99();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">Detector de Necesidades</div>
+							</div>
+						</div>
+					</div>
+					<!-- 2nd row verticaly centered images in square columns -->
+					<div class="rectangle clearSquare">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+					<div class="rectangle greenBtn" id="btnProductos">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">Productos</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript" src="js/identifica.js"></script>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+        	last_element = "pages/desktop.html";
+        	$(window).on('resize', function(){
+        		fixContentTo4_3();
+    		});
+        });
+        </script>

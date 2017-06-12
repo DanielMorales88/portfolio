@@ -1,0 +1,78 @@
+
+/* Stylesheet content from css/style.css in folder common */
+* {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+}
+/* Slideshow metrics */
+.slideshow {
+  width: 600px;
+  height: 400px; }
+
+/* ... */
+.slides img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Super slide */
+.with-overlay {
+  position: relative;
+}
+
+.with-overlay img,
+.with-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.with-overlay img {
+  z-index: 1;
+}
+
+.with-overlay .overlay {
+  z-index: 2;
+  background: rgba(0, 10, 60, 0.75);
+
+  text-align: center;
+  line-height: 200px;
+}
+
+.with-overlay .in {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+
+  /* Compensation for dots */
+  padding-bottom: 15px;
+
+  line-height: 1.4em;
+}
+
+.with-overlay h3 {
+  color: white;
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.with-overlay p {
+  margin-bottom: 20px;
+  color: #d0d0dd;
+}
+
+.with-overlay a.action {
+  display: inline-block;
+  padding: 3px 20px;
+  border: solid 2px #ddd;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  color: white;
+  border-radius: 20px;
+}

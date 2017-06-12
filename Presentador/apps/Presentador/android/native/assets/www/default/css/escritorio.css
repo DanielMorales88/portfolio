@@ -1,0 +1,48 @@
+
+/* Stylesheet content from css/escritorio.css in folder common */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-oct-2015, 10:42:39
+    Author     : cristopherbg
+*/
+
+#escritorio{
+    float: right;
+    /*background-color: rgba(0, 0, 255, 0.2);*/
+    margin-top: 0px;
+    margin-left: 0px;
+    
+}
+#leftSide {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#rightSide {
+    float: right;
+    background-color: white;/*rgba(255, 0, 0, 0.2);*/
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.imgAprende{
+    background-image: url('../images/aprende.jpg');
+}
+.imgConoce{
+    background-image: url('../images/conoce.jpg');
+}
+.imgPrepara{
+    background-image: url('../images/prepara.jpg');
+}
+.imgIdentifica{
+    background-image: url('../images/identifica.jpg');
+}

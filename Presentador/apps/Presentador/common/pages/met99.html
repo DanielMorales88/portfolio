@@ -1,0 +1,171 @@
+<link rel="stylesheet" type="text/css" media="all"
+	href="css/toggleSwitch.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/met99.css" />
+<style type="text/css">
+.styled-select select {
+	background: transparent;
+	width: 268px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	height: 34px;
+	-webkit-appearance: none;
+}
+</style>
+<div id="container">
+	<!--The Hamburger Button in the Header-->
+	<div id="menuContainer">
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="navMenu"></nav>
+	</div>
+	<!--The Layer that will be layed over the content
+              so that the content is unclickable while menu is shown-->
+	<div id="content" class="bg-met99">
+		<div id="contentLayer"></div>
+		<!--The content of the site-->
+		<div id="mainContent">
+			<div id="topLogo">
+				<a id="btnDesktop" href="javascript:loadDesktop();"><span
+					class="fa fa-home"></span></a> <img src="images/whiteLogo.png"
+					id="metlifeLogo" style="display: block;" />
+				<h3 id="breadCrumb">
+					<a href="javascript:loadIdentifica();">Identifica&#62;</a>
+				</h3>
+				<h1 id="titleScreen" style="margin-top: 1vh;">
+					Detector de necesidades <br />
+					<img src="images/logos/logo-met99.png"
+						style="width: 40%; margin-left: 10px; margin-top: -40px;" />
+				</h1>
+			</div>
+			<div id="escritorio">
+				<div id="leftSide"></div>
+				<div id="rightSide">
+					<h1>
+						Un seguro acorde<br />a tus necesidades
+					</h1>
+					<form role="form" style="padding: 10%;" id="met99Form" action="">
+						<div class="row">
+							<div class="col-xs-12">
+								<input type="text" name="nombre" placeholder="Nombre"
+									class="form-control" tabIndex="1" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<input type="number" name="edad" placeholder="Edad"
+									class="form-control" tabIndex="2" />
+							</div>
+							<div class="col-xs-6">
+								<div class="btn-group" role="group" id="esHombre"
+									style="width: 100%;">
+									<button type="button" class="btn btn-default" style="width: 50%;" tabIndex="3">Hombre</button>
+									<button type="button" class="btn btn-default" style="width: 50%;" tabIndex="4">Mujer</button>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-7">
+								<select name="edoCivil" id="estadocivil"
+									class="btn btn-default dropdown-toggle" style="width: 100%;"
+									tabIndex="5">
+									<option value="Otro">Estado Civil</option>
+									<option value="Casado">Casado</option>
+									<option value="Soltero">Soltero</option>
+									<option value="Otro">Otro</option>
+								</select>
+							</div>
+							<div class="col-xs-5">
+								<select name="hijos" id="hijos"
+									class="btn btn-default dropdown-toggle" style="width: 100%;"
+									tabIndex="6">
+									<option value="0">Hijo(s)</option>
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<select name="dependientes" id="dependientes"
+									class="btn btn-default dropdown-toggle" style="width: 100%;">
+									<option value="0">Dependientes</option>
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<label class="control-label" for="met99">Tiene MET99?</label>
+							</div>
+							<div class="col-xs-6">
+								<label class="switch"> <input type="checkbox"
+									class="switch-input" name="met99"> <span
+									class="switch-label fa"></span> <span class="switch-handle"></span>
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12" style="text-align: center;">
+								<button type="submit" class="btn btn-default ofertaBtn"
+									style="text-align: center;">VER OFERTA</button>
+							</div>
+						</div>
+					</form>
+					<div id="ContainerResultado">
+						<div id="datosUsuario">
+							<div id="imgGenero" class="row rowImg"></div>
+							<div class="row">
+								<div class="col-xs-6 rowLabel">Nombre</div>
+								<div class="col-xs-6" id="nombreRegistrado"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 rowLabel">Edad</div>
+								<div class="col-xs-6" id="edadRegistrada"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 rowLabel">Estado Civil</div>
+								<div class="col-xs-6" id="edoCivilRegistrado"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 rowLabel">Hijos</div>
+								<div class="col-xs-6" id="hijosRegistrados"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 rowLabel">Dependientes</div>
+								<div class="col-xs-6" id="dependientesRegistrados"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6 rowLabel">Tiene MET99?</div>
+								<div class="col-xs-6" id="tieneMet99"></div>
+							</div>
+						</div>
+						<div class="list-group" id="productosResultado"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript" src="js/ADN.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+        	last_element = "pages/identifica.html";
+        });
+        </script>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F9EFB4C2FF45112EF31D342DC7E6755B5D6A446D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F9EFB4C2FF45112EF31D342DC7E6755B5D6A446D" : 0,
+    "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9E8715C4-117B-414F-828F-FED08D1F2AB5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F9EFB4C2FF45112EF31D342DC7E6755B5D6A446D" : "PresentadorMFP\/",
+    "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : "PresentadorMFP\/Metlife\/apps\/Presentador\/ipad\/native\/www\/MLAFNetworking\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MetlifePresentadorIpad",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Metlife\/apps\/Presentador\/ipad\/native\/MetlifePresentadorIpad.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AFNetworking\/AFNetworking",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/iandamecsican\/presentadormfp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F9EFB4C2FF45112EF31D342DC7E6755B5D6A446D"
+    }
+  ]
+}

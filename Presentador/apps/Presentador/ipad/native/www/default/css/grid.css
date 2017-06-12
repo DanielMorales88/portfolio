@@ -1,0 +1,217 @@
+
+/* Stylesheet content from css/grid.css in folder common */
+.square {
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 33.4%;
+	padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+	margin: 0%;
+	background-color: white;
+	color: #1573A5;
+	overflow: hidden;
+}
+
+.rectangle {
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 33.4%;
+	padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+	margin: 0%;
+	background-color: white;
+	color: #1573A5;
+	overflow: hidden;
+}
+
+.orangeBtn {
+	background-color: #EF633A;
+	color: white;
+}
+
+.blueBtn {
+	background-color: #017BC3;
+	color: white;
+}
+
+.grayBtn {
+	background-color: #5e5e5e;
+	color: white;
+}
+
+.greenBtn {
+	background-color: #62A643;
+	color: white;
+}
+
+.squareBtn:active {
+	color: white;
+	background-color: #1573A5;
+}
+/*.squareBtn:hover {
+    color: white;
+    background-color:#1573A5;
+}*/
+.content {
+	position: absolute;
+	height: 100%; /* = 100% - 2*5% padding */
+	width: 100%; /* = 100% - 2*5% padding */
+	/*padding: 5%;*/
+}
+
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.table-cell iframe {
+	width: 100%;
+	height: 100%;
+}
+/*  For list */
+ul {
+	text-align: left;
+	margin: 5% 0 0;
+	padding: 0;
+	list-style-position: inside;
+}
+
+li {
+	margin: 0 0 0 5%;
+	padding: 0;
+}
+
+/*  For responsive images */
+.content .rs {
+	width: auto;
+	height: auto;
+	max-height: 90%;
+	max-width: 100%;
+}
+/*  For responsive images as background */
+.bg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* you change this to "contain" if you don't want the images to be cropped */
+	color: white;
+}
+
+/*  following just for the demo */
+.numbers {
+	font-size: 35px;
+	bottom: 0;
+	vertical-align: bottom;
+	margin-bottom: 5%;
+	padding-left: 5%;
+}
+
+.numbersRect {
+	font-size: 35px;
+	bottom: 0;
+	vertical-align: middle;
+	margin-bottom: 5%;
+}
+
+.centerTextBtn {
+	text-align: center;
+	margin-left: 0;
+}
+
+.clearSquare {
+	background-color: transparent;
+}
+
+.whiteBtn {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #017BC3;
+}
+
+.btnIcon {
+	width: 18%;
+	display: block;
+	margin: auto;
+	margin-bottom: 2%;
+}
+
+#escritorio {
+	float: right;
+	/*background-color: rgba(0, 0, 255, 0.2);*/
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#leftSide {
+	float: left;
+	width: 50%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#rightSide {
+	float: right;
+	width: 50%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.unselectable {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#btnDesktop span {
+	color: white;
+	font-size: 34px;
+	float: left;
+	margin-left: 10px;
+}
+
+img.logoGrid {
+   width: 80%;
+   padding-bottom: 10px;
+}
+
+img.logoSectionsLarge {
+   width: 50%;
+   padding-bottom: 10px;
+}
+
+img.logoSections {
+   width: 35%;
+   padding-bottom: 10px;
+}
+
+.ui-mobile-viewport ui-overlay-a {
+	background: transparent;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+	background: transparent;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'FrutigerLTStd-Cn';
+	font-weight: lighter;
+}
+
+body {
+	font-family: 'FrutigerLTStd-Cn';
+	font-weight: lighter
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+	text-shadow: none;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper

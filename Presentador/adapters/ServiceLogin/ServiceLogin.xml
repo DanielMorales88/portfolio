@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wl:adapter xmlns:wl="http://www.ibm.com/mfp/integration" 
+xmlns:http="http://www.ibm.com/mfp/integration/http" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="ServiceLogin">
+    <displayName>ServiceLogin</displayName>
+    <description></description>
+    <connectivity>
+        <connectionPolicy xsi:type="http:HTTPConnectionPolicyType">
+            <protocol>http</protocol>
+            <domain>mxsrvwebmtdsd.alico.corp</domain>
+            <port>5556</port>
+			<connectionTimeoutInMilliseconds>30000</connectionTimeoutInMilliseconds>
+			<socketTimeoutInMilliseconds>30000</socketTimeoutInMilliseconds>
+			<maxConcurrentConnectionsPerNode>2</maxConcurrentConnectionsPerNode>
+        </connectionPolicy>
+    </connectivity>
+
+    <procedure name="getLoginLDAP"/>
+</wl:adapter>

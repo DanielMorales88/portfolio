@@ -1,0 +1,137 @@
+
+<link rel="stylesheet" type="text/css" media="all"
+	href="css/escritorio.css" />
+<div id="container">
+	<!--The Hamburger Button in the Header-->
+	<div id="menuContainer" style="overflow-y: scroll;">
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="navMenu"></nav>
+	</div>
+	<!--The Layer that will be layed over the content
+              so that the content is unclickable while menu is shown-->
+	<div id="content" class="bg-sensibiliza">
+		<div id="contentLayer"></div>
+
+		<!--The content of the site-->
+		<div id="mainContent">
+			<div id="topLogo">
+				<span class="fa fa-home" id="btnDesktop" style="display: none;"></span>
+				<img src="images/whiteLogo.png" id="metlifeLogo"
+					style="float: left; width: 17vw;" />
+			</div>
+			<div id="escritorio">
+				<div id="leftSide">
+					<!-- 1st row verticaly centered text in the square columns -->
+					<div class="square clearSquare unselectable">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers"></div>
+							</div>
+						</div>
+					</div>
+					<div class="square clearSquare unselectable">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+					<!-- 2nd row verticaly centered images in square columns -->
+					<div class="square clearSquare unselectable">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+					<div class="square squareBtn" id="btnSensibiliza"
+						onclick="javascript:loadSensibiliza();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">Sensibiliza</div>
+							</div>
+						</div>
+					</div>
+					<!-- 3rd row responsive images in background with centered content -->
+
+					<div class="square squareBtn" id="btnPrepara"
+						onclick="javascript:proximamente();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">Prepara</div>
+							</div>
+						</div>
+					</div>
+					<div class="square bg imgPrepara">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="rightSide">
+					<!-- 1st row verticaly centered text in the square columns -->
+					<div class="square squareBtn" id="btnConoce"
+						onclick="javascript:loadConoce();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">Conoce</div>
+							</div>
+						</div>
+					</div>
+					<div class="square bg imgConoce">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2nd row verticaly centered images in square columns -->
+
+					<div class="square bg imgIdentifica">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+					<div class="square squareBtn" id="btnIdentifica"
+						onclick="javascript:loadIdentifica();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">Identifica</div>
+							</div>
+						</div>
+					</div>
+					<!-- 3rd row responsive images in background with centered content -->
+					<div class="square squareBtn" id="btnAprende"
+						onclick="javascript:proximamente();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbers">Aprende</div>
+							</div>
+						</div>
+					</div>
+					<div class="square bg imgAprende">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript" src="js/escritorio.js"></script>

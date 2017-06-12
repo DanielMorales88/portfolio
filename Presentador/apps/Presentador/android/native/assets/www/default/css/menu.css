@@ -1,0 +1,162 @@
+
+/* Stylesheet content from css/menu.css in folder common */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 05-oct-2015, 10:15:22
+    Author     : cristopherbg
+*/
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+}
+
+.escritorio {
+	-moz-column-count: 2;
+	-moz-column-gap: 0px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 0px;
+	column-count: 2;
+	column-gap: 0px;
+	width: 1024px; /*100%;*/
+}
+
+.escritorio div {
+	display: block;
+	width: 100%;
+}
+
+.escritorio div img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#infoUsuario {
+	align-content: center;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.datosMenu p {
+	margin: 0px;
+	color: #7B7E7C;
+}
+
+#nombre {
+	color: #007CC2;
+	font-size: 1.5em;
+}
+
+#logout {
+	padding: 12px 0px 12px 0px;
+	margin: 40px 30px 10px 40px;
+	border: 1px solid #007CC2;
+	background-color: #E5F1F7;
+	border-style: solid;
+	color: #007CC2;
+}
+
+#logout a {
+	border: none;
+	color: #007CC2;
+	font-size: 1.0em;
+}
+
+#topLogo {
+	z-index: 4;
+	position: fixed;
+	margin-top: 5vh;
+	margin-left: 3vw;
+	width: 34vw;
+	height: 10vh;
+}
+
+#metlifeLogo {
+	margin-right: -1vw;
+	width: 10vw;
+	float: left;
+	margin-left:10px;
+}
+
+#btnDesktop img {
+	width: 20%;
+	float: left;
+}
+
+#titleScreen {
+	color: white;
+	margin-top: 0.5em;
+	font-size: 4em;
+	font-weight: normal;
+	display: inline-block;
+	width: 45vw;
+}
+
+#breadCrumb a {
+	color: white;
+}
+
+#breadCrumb {
+	color: white;
+	margin-top: 45px;
+	margin-left: auto;
+	float: left;
+	width: 502px;
+	white-space: nowrap;
+	font-size: 22px;
+}
+/*
+.bootstrap-dialog.type-primary .modal-header{
+    background: white;
+}
+
+.bootstrap-dialog .bootstrap-dialog-title{
+    color: #428bca;
+}
+*/
+.modal-header {
+	border-bottom: none;
+	padding: 15px 15px 0px 15px;
+}
+
+.modal-footer {
+	border-top: none;
+}
+
+.modal-footer {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.bootstrap-dialog .bootstrap-dialog-title {
+	font-size: 2.5vh;
+	font-weight: bold;
+}
+
+.bootstrap-dialog .bootstrap-dialog-message {
+	color: #656565;
+	font-size: 2vh;
+	font-weight: normal;
+}
+
+.close {
+	color: #007FC2;
+	opacity: 1;
+}
+
+.close:hover {
+	color: #007FC2;
+	opacity: 0.8;
+}
+
+@media ( min-width : 768px) {
+	.modal-sm {
+		width: 450px;
+	}
+}

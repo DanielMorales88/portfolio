@@ -1,0 +1,7 @@
+
+/* Stylesheet content from css/overthrow.css in folder common */
+.overthrow-enabled .overthrow {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	z-index: 0
+}

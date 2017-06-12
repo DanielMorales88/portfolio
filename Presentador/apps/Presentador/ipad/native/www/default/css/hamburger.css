@@ -1,0 +1,187 @@
+
+/* Stylesheet content from css/hamburger.css in folder common */
+html {
+    overflow-y: scroll;
+}
+
+/*
+Setup a basic body
+*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-family:"FrutigerLTStd-Cn";
+	overflow-y: hidden;
+}
+/*
+Header is relative so z-index: 1 guarantees always displayed on top
+*/
+header {
+    /*background-col+or: #3b5998;
+    padding: 10px;
+    text-decoration: none;*/
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+    /*-webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);*/
+}
+
+/*
+using background color is important to cover the menu
+position absolute isset to cover the whole viewport
+*/
+/*
+#content {
+    background-color: #FFFFFF;
+    position: relative;
+    width: auto;
+    height: 100%;
+    -webkit-box-shadow: 4px 0px -5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 0px -5px 0px rgba(0, 0, 0, 0.4);
+}
+*/
+/*
+the hamburger button with a little gradient effekt
+*/
+#hamburger {
+    /*border: 1px solid #374C77;
+    border-radius: 3px 3px 3px 3px;*/
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    padding: 3px 4px 3px;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    left: 0px;
+    background-color: white;
+    -webkit-align-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/*
+The white stripes in the hamburger button
+*/
+#hamburger div {
+    background-color: #007CC2;
+    border: 2px solid #007CC2;
+    border-radius: 2px 2px 2px 2px;
+    height: 1px;
+    margin: 4px 0px 4px 0px;
+    padding: auto;
+    text-align: center;
+    width: 85%;
+}
+
+/*
+The navigation container in the background
+*/
+nav {
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
+    width: 25%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #F1F3F4;
+    align-content: center;          
+    text-align: center;
+}
+
+/*
+Style the navigation menu
+*/
+nav ul {
+    list-style: none;
+    margin: 10px 10px 30px 30px;
+    width: 80%;
+    padding: 0;
+    text-align: left;
+}
+
+nav li {
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #007BC1;
+    padding: 10px;
+}
+
+nav li a {
+    color: #7B7E7C;
+    text-decoration: none;
+}
+
+/*
+The Layer that will be layed over the content
+so that the content is unclickable while menu is shown
+*/
+#contentLayer {
+    display: none;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#overlay {
+    position:fixed; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    z-index: 7;
+}
+
+#modal {
+    position:absolute;
+    /*background:url(tint20.png) 0 0 repeat;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;*/
+    padding:8px;
+    z-index: 8;
+}
+
+#modalContent {
+    /*border-radius:8px;*/
+    background:#fff;
+    padding:20px;
+    z-index: 9;
+    text-align: center;
+}
+
+#close {
+    position:absolute;
+    background:url('../images/buttons/close.png') 0 0 no-repeat;
+    background-size: 32px 32px;
+    width:32px;
+    height:32px;
+    display:block;
+    text-indent:-9999px;
+    top:15px;
+    right:15px;
+    z-index: 9;
+}
+
+.list-group-item{
+	background-color:transparent;
+	border:none;
+}

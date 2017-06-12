@@ -1,0 +1,84 @@
+<div id="container">
+	<!--The Hamburger Button in the Header-->
+	<div id="menuContainer">
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="navMenu"></nav>
+	</div>
+	<!--The Layer that will be layed over the content
+              so that the content is unclickable while menu is shown-->
+	<div id="content" class="bg-sensibiliza">
+		<div id="contentLayer"></div>
+		<!--The content of the site-->
+		<div id="mainContent">
+			<div id="topLogo">
+				<a id="btnDesktop" href="javascript:loadDesktop();"><span
+					class="fa fa-home"></span></a> <img src="images/whiteLogo.png"
+					id="metlifeLogo" />
+				<h1 id="titleScreen">Sensibiliza</h1>
+			</div>
+			<div id="escritorio">
+				<div id="leftSide"></div>
+				<div id="rightSide">
+					<!-- 1st row verticaly centered text in the square columns -->
+					<div class="rectangle blueBtn" id="btnPresentacion">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbersRect centerTextBtn">
+									<img src="images/icons/IconPresentacion.png" class="btnIcon" />
+									Presentaci&oacute;n
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 2nd row verticaly centered images in square columns <a href='javascript:playMyVideo("+option.video+");' class='list-group-item'>-->
+					<div class="rectangle grayBtn" id="btnMet99">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbersRect centerTextBtn">
+									<img src="images/icons/IconPresentacion.png" class="btnIcon" />
+									Met99
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rectangle greenBtn" id="btnComparativo">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbersRect centerTextBtn">
+									<img src="images/icons/IconPresentacion.png" class="btnIcon" />
+									Comparativo
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="rectangle clearSquare" onclick="javascript:playMyVideo();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell">
+									<video preload="metadata" id="myVideo" autobuffer controls>
+										<source src="video/BigBuck.mp4" type="video/mp4"></source>
+									</video>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript" src="js/fileopener.js"></script>
+<script type="text/javascript" src="js/sensibiliza.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+        	last_element = "pages/desktop.html";
+        });
+        </script>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Presentador">
+        <wb-resource deploy-path="/" source-path="/apps/Presentador/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/Presentador/ipad"/>
+        <wb-resource deploy-path="/" source-path="/apps/Presentador/android"/>
+        <property name="context-root" value="Presentador"/>
+    </wb-module>
+</project-modules>

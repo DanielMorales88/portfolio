@@ -1,0 +1,39 @@
+
+/* Stylesheet content from css/main.css in folder common */
+@font-face {
+	font-family: 'FrutigerLTStd-Cn';
+	src: url('../fonts/FrutigerLTStd-Cn.eot');
+	src: url('../fonts/FrutigerLTStd-Cn.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: 'FrutigerLTStd-Cn';
+}
+
+*:focus {
+    outline: 0;
+}
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+#rightSide {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ui-mobile, .ui-mobile body {
+height: 100%;
+}
+/* Stylesheet content from css/main.css in folder android */
+
+/* this CSS file extends the application CSS file found under common\css */
+

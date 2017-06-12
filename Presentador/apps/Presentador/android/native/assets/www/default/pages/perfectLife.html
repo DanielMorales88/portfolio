@@ -1,0 +1,101 @@
+<div id="container">
+	<!--The Hamburger Button in the Header-->
+	<div id="menuContainer">
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="navMenu"></nav>
+	</div>
+	<!--The Layer that will be layed over the content
+              so that the content is unclickable while menu is shown-->
+	<div id="content" class="bg-perfectlife">
+		<div id="contentLayer"></div>
+		<!--The content of the site-->
+		<div id="mainContent">
+			<div id="topLogo">
+				<a id="btnDesktop" href="javascript:loadDesktop();"><span
+					class="fa fa-home"></span></a> <img src="images/whiteLogo.png"
+					id="metlifeLogo" style="display: block;" />
+				<h3 id="breadCrumb" style="margin-left: 10px;">
+					<a href="javascript:loadIdentifica();">Identifica&#62; </a><a
+						href="javascript:loadProductosPrivado();">Productos&#62; </a><a
+						href="javascript:loadInversion();">Inversi&oacute;n o Ahorro
+						&#62;</a>
+				</h3>
+				<div id="titleScreen" style="margin-top: 1vh; color: #B51783;">
+					<img src="images/logos/logo-perfectlife.png" style="width: 75%; margin-left: 10px;" />
+				</div>
+			</div>
+			<div id="escritorio">
+				<div id="leftSide"></div>
+				<div id="rightSide">
+					<!-- 1st row verticaly centered text in the square columns -->
+					<div class="rectangle blueBtn" id="btnPresentacion">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbersRect centerTextBtn">
+									<img src="images/icons/IconPresentacion.png" class="btnIcon" />
+									Presentaci&oacute;n
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 2nd row verticaly centered images in square columns -->
+					<div class="rectangle grayBtn" id="btnVideo">
+							<div class="content">
+								<div class="table">
+									<div class="table-cell numbersRect centerTextBtn"><img src="images/icons/icon-video.png" class="btnIcon" />Video</div>
+								</div>
+							</div>
+						</div>
+					<div class="rectangle greenBtn" id="btnCotiza"
+						onclick="javascript:proximamente();">
+						<div class="content">
+							<div class="table">
+								<div class="table-cell numbersRect centerTextBtn">
+									<img src="images/icons/IconCotiza.png" class="btnIcon" />
+									Cotiza
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/libs/hamburger.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+        	last_element = "pages/inversion.html";
+
+			$("#btnPresentacion").click(function() {
+				getContentForKey("PRE039", function(url){
+					if(url !==  ""){
+						openPDF(url);
+					}else{
+						alert("Contendio no disponible. Intenta más tarde.");
+					}
+				}, function(errorDescription){
+					alert("Contenido no disponible. Intenta más tarde");
+				});
+			});
+
+			$("#btnVideo").click(function() {
+				getContentForKey("PRE040", function(url){
+					if(url !==  ""){
+						playMyVideo(url);
+					}else{
+						alert("Contendio no disponible. Intenta más tarde.");
+					}
+				}, function(errorDescription){
+					alert("Contenido no disponible. Intenta más tarde");
+				});
+			});
+        });
+        </script>
